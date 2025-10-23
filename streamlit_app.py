@@ -14,7 +14,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # ========= PAGE CONFIG =========
 st.set_page_config(
-    page_title="ML Movie Recommendator 🍿",
+    page_title="ML Movie Recommender 🍿",
     page_icon="🎬",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -239,7 +239,7 @@ def ep_reporte_director(df: pd.DataFrame, nombre_director: str):
     }
 
 # ========= HEADER =========
-st.markdown('<h1 class="main-title">🎥 ML Movie Recommendator 🍿</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-title">🎥 ML Movie Recommender 🍿</h1>', unsafe_allow_html=True)
 st.caption("3 tabs to interact with: • Charts(Analysis by language) • Recommender • Endpoint-style actions with clear (e.g.) examples")
 # ========= HEADER =========
 # ---- label before tabs ----
@@ -252,7 +252,7 @@ st.markdown("""
   text-align: left !important;  /* left align */
 }
 </style>
-<p class="tabs-lead">Select a section between: | Charts | Recommendator | Endpoints |</p>
+<p class="tabs-lead">Select a section between: | Charts | Recommender | Endpoints |</p>
 """, unsafe_allow_html=True)
 
 # ---- center the tabs ----
@@ -273,7 +273,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ========= TABS =========
-tab1, tab2, tab3 = st.tabs(["📊 Charts", "🔍Recommendator", "🧪 Endpoint Actions"])
+tab1, tab2, tab3 = st.tabs(["📊 Charts", "🔍Recommender", "🧪 Endpoint Actions"])
 
 # ----- TAB 1: CHARTS -----
 with tab1:
@@ -456,5 +456,5 @@ with tab3:
 
 # ========= FOOTER =========
 st.divider()
-st.markdown('<div class="center-caption">® Demo of Machine Learning sentiment analysis recommendator.</div>',
+st.markdown('<div class="center-caption">® Demo of Machine Learning sentiment analysis recommender.</div>',
             unsafe_allow_html=True)
